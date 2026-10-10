@@ -5,6 +5,19 @@ namespace Madego.Core;
 // Export only the selected connection parameters. Never forward raw URI/JSON or subscription/display metadata.
 public static class CanonicalServerShare
 {
+    static bool ContainsNestedLink(string value)
+    {
+        static bool Linked(string text)=>text.Contains("://",StringComparison.Ordinal)||text.Contains("madyar:",StringComparison.OrdinalIgnoreCase);
+        for(int round=0;round<32;round++) {
+            if(Linked(value))return true;
+            // Known parameters still cannot conceal a source URL through a reversible text encoding.
+            try {var compact=value.Replace('-','+').Replace('_','/');compact+=new string('=',(4-compact.Length%4)%4);
+                var decoded=new System.Text.UTF8Encoding(false,true).GetString(Convert.FromBase64String(compact));if(Linked(decoded))return true;
+            }catch(FormatException){}catch(System.Text.DecoderFallbackException){}
+            var next=Uri.UnescapeDataString(value);if(next==value)return false;value=next;
+        }
+        return true; // Deep opaque encodings are not a safely shareable transport parameter.
+    }
     public static string Export(VpnNode node)
     {
         if (node.Protocol != "vless" || !Guid.TryParse(node.UserId,out var uuid) || node.Port is < 1 or > 65535)
@@ -19,7 +32,7 @@ public static class CanonicalServerShare
         if (Uri.CheckHostName(host)==UriHostNameType.Unknown) throw new ArgumentException("Invalid server host.");
         var fields=new List<KeyValuePair<string,string>>();
         void Add(string key,string value) {
-            if (value.Length > 8192 || value.Any(char.IsControl) || value.Contains("://",StringComparison.Ordinal) || value.Contains("madyar:",StringComparison.OrdinalIgnoreCase))
+            if (value.Length > 8192 || value.Any(char.IsControl) || ContainsNestedLink(value))
                 throw new ArgumentException("Nested links or control characters cannot be shared.");
             if (!string.IsNullOrEmpty(value)) fields.Add(new(key,value));
         }

@@ -39,7 +39,7 @@ public sealed class AppService(MacPaths paths,IWrappingKeyStore keys,PeerService
     object StateDto(MacState? candidate=null,MacSettings? preferences=null,string? attention=null) {
         var state=candidate??_state;var settings=preferences??_settings;return new {
         attention,
-        version="0.1.0-dev.1",language=settings.Language,mode=settings.Mode.ToString(),refreshMinutes=settings.RefreshMinutes,
+        version="0.1.0-dev.2",language=settings.Language,mode=settings.Mode.ToString(),refreshMinutes=settings.RefreshMinutes,
         selectedId=state.SelectedId,connection=new{status="Unavailable",reason="provider_not_implemented"},
         groups=state.Subscriptions.Select(g=>new{id=g.Id,name=DisplayLabel(g.Name,100),local=string.IsNullOrEmpty(g.Url),count=g.CachedNodes.Count,updated=g.UpdatedAt,expires=g.ExpiresAt,usedBytes=g.TrafficUsedBytes,totalBytes=g.TrafficTotalBytes}).ToArray(),
         nodes=state.Subscriptions.SelectMany(g=>g.CachedNodes.Select(n=>new{id=n.Id,groupId=g.Id,name=DisplayLabel(n.DisplayName,160),country=n.Country,flag=n.CountryFlag,protocol=n.Protocol,transport=DisplayLabel(n.Transport,40),security=DisplayLabel(n.Security,40)})).ToArray(),

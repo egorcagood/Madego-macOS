@@ -1,6 +1,6 @@
 # Сборка Madego для Mac
 
-Локальная линия 0.1.0-dev.1 — SwiftUI, Common Core и PeerChat/Link. VPN-туннель ещё не реализован. Для этой сборки не нужен Apple Developer, но ad-hoc подпись не подходит для публичного VPN-релиза.
+Локальная линия 0.1.0-dev.2 — SwiftUI, Common Core и PeerChat/Link. VPN-туннель ещё не реализован. Для этой сборки не нужен Apple Developer, но ad-hoc подпись не подходит для публичного VPN-релиза.
 
 ## Окружение
 

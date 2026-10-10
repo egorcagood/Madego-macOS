@@ -24,5 +24,7 @@ var back=SingleServerShare.Import(exported).Nodes.Single();Check(back.SpiderX=="
 node.ExtraJson="{\"downloadSettings\":{\"subscription\":\"https://secret.invalid/token\"}}";
 Reject(()=>CanonicalServerShare.Export(node),"opaque extra rejected");
 node.ExtraJson="";node.Path="/https://secret.invalid/token";Reject(()=>CanonicalServerShare.Export(node),"nested URL rejected");
+node.Path=Uri.EscapeDataString(Uri.EscapeDataString("https://secret.invalid/token"));Reject(()=>CanonicalServerShare.Export(node),"nested percent encoded subscription URL rejected");
+node.Path="/";node.ServiceName=Convert.ToBase64String(Encoding.UTF8.GetBytes("https://secret.invalid/token"));Reject(()=>CanonicalServerShare.Export(node),"base64 hidden subscription URL rejected");
 var policy=RoutingPolicySnapshot.Create(RoutingMode.RuMode,new());Check(policy.MatchHost("unknown.invalid")==DomainRoute.Proxy,"unknown proxy");Check(policy.MatchHost("youtube.com")==DomainRoute.Proxy,"protected proxy");
 Console.WriteLine($"CORE_CHECKS_PASS={checks}");

@@ -3,7 +3,7 @@
 <plist version="1.0"><dict>
 <key>CFBundleName</key><string>Madego</string><key>CFBundleDisplayName</key><string>Madego</string>
 <key>CFBundleIdentifier</key><string>dev.madego.macOS</string><key>CFBundleExecutable</key><string>Madego</string>
-<key>CFBundlePackageType</key><string>APPL</string><key>CFBundleShortVersionString</key><string>0.1.0</string><key>CFBundleVersion</key><string>1</string>
+<key>CFBundlePackageType</key><string>APPL</string><key>CFBundleShortVersionString</key><string>0.1.0</string><key>CFBundleVersion</key><string>2</string>
 <key>LSMinimumSystemVersion</key><string>14.0</string><key>NSHighResolutionCapable</key><true/>
 <key>NSPrincipalClass</key><string>NSApplication</string><key>CFBundleDevelopmentRegion</key><string>ru</string>
 </dict></plist>

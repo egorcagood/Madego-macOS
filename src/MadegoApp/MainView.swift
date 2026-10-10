@@ -11,7 +11,7 @@ struct MainView:View {
                 }
                 Spacer()
                 Button {store.profile()} label:{Label(store.snapshot?.chat.nickname.isEmpty==false ? store.snapshot!.chat.nickname:store.tr("profile"),systemImage:"person.crop.circle").lineLimit(1).frame(maxWidth:.infinity,alignment:.leading).padding(12)}.buttonStyle(.plain)
-                Text(store.snapshot?.app.version ?? "0.1.0-dev.1").font(.caption2).foregroundStyle(.tertiary).padding(.horizontal,12)
+                Text(store.snapshot?.app.version ?? "0.1.0-dev.2").font(.caption2).foregroundStyle(.tertiary).padding(.horizontal,12)
             }.padding(20).frame(width:210).background(Theme.sidebar)
             Rectangle().fill(Theme.line).frame(width:1)
             VStack(spacing:0) {
