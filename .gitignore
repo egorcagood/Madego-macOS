@@ -1,0 +1,28 @@
+# Build products and local user state
+**/bin/
+**/obj/
+.build/
+.swiftpm/
+.DS_Store
+work/
+checkpoints/
+artifacts/
+.superpowers/
+*.db
+*.db-*
+*.sqlite*
+*.key
+*.pem
+*.p12
+*.mobileprovision
+.env*
+user-data/
+*.log
+# Local transfer/audit material; public source export is a separate allowlist.
+windows-baseline/
+verification/
+build-metadata/windows-baseline.json
+docs/00-USER-REQUEST.txt
+docs/HANDOFF.md
+docs/01-AUDIT.md
+AGENTS.md

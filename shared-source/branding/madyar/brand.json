@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "MadyarVPN",
+  "productName": "Madego",
+  "shortName": "Madego",
+  "executableName": "MadyarVPN",
+  "installFolder": "Madyar VPN",
+  "dataFolder": "MadyarVPN",
+  "tunName": "MadyarVPN",
+  "publisher": "Egor Madyar",
+  "author": "Егор Мадяр",
+  "showAuthor": true,
+  "telegram": "https://t.me/egormadyar",
+  "telegramLabel": "@egormadyar",
+  "authorNotes": false,
+  "accent": "#57C7E8",
+  "migrateLegacyData": true,
+  "icon": "icon.ico",
+  "logo": "logo.png"
+}

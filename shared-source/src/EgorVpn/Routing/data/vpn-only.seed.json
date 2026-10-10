@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026.10.08-seed.1",
+  "coverage": "seed-not-exhaustive",
+  "services": [
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "aliases": [
+        "ютуб",
+        "youtube"
+      ],
+      "category": "vpn-only",
+      "enabledInRuPreset": true,
+      "route": "proxy",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "googlevideo.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/youtube",
+              "lines": [
+                6
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "youtu.be",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/youtube",
+              "lines": [
+                9
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "youtube-nocookie.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/youtube",
+              "lines": [
+                10
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "youtube.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/youtube",
+              "lines": [
+                47
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "youtube.googleapis.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/youtube",
+              "lines": [
+                107
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "youtubeembeddedplayer.googleapis.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/youtube",
+              "lines": [
+                165
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "youtubei.googleapis.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/youtube",
+              "lines": [
+                174
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "ytimg.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/youtube",
+              "lines": [
+                178
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "aliases": [
+        "дискорд",
+        "discord"
+      ],
+      "category": "vpn-only",
+      "enabledInRuPreset": true,
+      "route": "proxy",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "dis.gd",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/discord",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "discord-activities.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/discord",
+              "lines": [
+                14
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "discord.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/discord",
+              "lines": [
+                4
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "discord.gg",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/discord",
+              "lines": [
+                7
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "discord.media",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/discord",
+              "lines": [
+                10
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "discordactivities.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/discord",
+              "lines": [
+                15
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "discordapp.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/discord",
+              "lines": [
+                16
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "discordapp.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/discord",
+              "lines": [
+                17
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "discordcdn.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/discord",
+              "lines": [
+                31
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain",
+          "value": "discord-attachments-uploads-prd.storage.googleapis.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/discord",
+              "lines": [
+                33
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    }
+  ]
+}

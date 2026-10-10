@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net9.0</TargetFramework><ImplicitUsings>disable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+ <ItemGroup>
+  <ProjectReference Include="../../../src/Madego.PeerChat/Madego.PeerChat.csproj"/>
+  <!-- The real import/cache/configuration path, linked as in EngineChecks; no WPF or VPN process. -->
+  <Compile Include="../../../shared-source/src/EgorVpn/GlobalUsings.cs" Link="GlobalUsings.cs"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Models/*.cs" Link="Models/%(Filename)%(Extension)"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Branding/*.cs" Link="Branding/%(Filename)%(Extension)"/>
+  <EmbeddedResource Include="../../../shared-source/branding/madyar/brand.json" LogicalName="Madyar.BrandProfile.json"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Presentation/Items.cs" Link="Presentation/Items.cs"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Presentation/ObservableObject.cs" Link="Presentation/ObservableObject.cs"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Services/SingleServerShare.cs" Link="Services/SingleServerShare.cs"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Services/AtomicJsonStore.cs" Link="Services/AtomicJsonStore.cs"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Services/NodeLabelFormatter.cs" Link="Services/NodeLabelFormatter.cs"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Services/DisplayFormat.cs" Link="Services/DisplayFormat.cs"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Services/VlessUriParser.cs" Link="Services/VlessUriParser.cs"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Services/QueryString.cs" Link="Services/QueryString.cs"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Services/CountryResolver.cs" Link="Services/CountryResolver.cs"/>
+  <Compile Include="../../../shared-source/src/EgorVpn/Services/XrayConfigBuilder.cs" Link="Services/XrayConfigBuilder.cs"/>
+ </ItemGroup>
+<ItemGroup><Compile Include="../../../shared-source/scripts/UiText.cs" Link="Localization/UiText.cs"/></ItemGroup>
+<ItemGroup><Compile Include="../../../shared-source/src/EgorVpn/Presentation/InterfaceFormat.cs" Link="Presentation/InterfaceFormat.cs"/></ItemGroup><ItemGroup><Compile Include="../../../shared-source/src/EgorVpn/Routing/*.cs" Link="Routing/%(Filename)%(Extension)"/><EmbeddedResource Include="../../../shared-source/src/EgorVpn/Routing/data/*" LogicalName="EgorVpn.Routing.data.%(Filename)%(Extension)"/></ItemGroup></Project>

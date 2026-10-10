@@ -1,0 +1,3211 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026.10.08-seed.1",
+  "generatedAt": "2026-10-08",
+  "coverage": "seed-not-exhaustive",
+  "upstream": {
+    "repository": "https://github.com/v2fly/domain-list-community",
+    "commit": "e84921279c9142434b43cb84ec6c17f987e025df",
+    "date": "2026-10-08T09:30:42Z",
+    "url": "https://github.com/v2fly/domain-list-community/commit/e84921279c9142434b43cb84ec6c17f987e025df",
+    "license": "MIT"
+  },
+  "verification": {
+    "domainMembership": "checked-against-pinned-source-or-cited-official-page",
+    "allServiceDependencies": "not-verified",
+    "windowsEndToEnd": "not-tested"
+  },
+  "defaults": {
+    "mode": "FullVpn",
+    "unknownTraffic": "proxy",
+    "broadRussianTldBypass": false,
+    "geoIpRuBypass": false,
+    "automaticDirectFallback": false
+  },
+  "services": [
+    {
+      "id": "gosuslugi",
+      "name": "Госуслуги / ЕСИА",
+      "aliases": [
+        "госуслуги",
+        "гос услуги",
+        "госуслугах",
+        "есиа",
+        "gosuslugi",
+        "esia"
+      ],
+      "category": "government",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "gosuslugi.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-gov-ru",
+              "lines": [
+                6
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "gu-st.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-gov-ru",
+              "lines": [
+                7
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [
+        "www.gosuslugi.ru",
+        "esia.gosuslugi.ru"
+      ],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "fns",
+      "name": "ФНС / Налоги",
+      "aliases": [
+        "фнс",
+        "налоговая",
+        "налоги",
+        "nalog"
+      ],
+      "category": "government",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "nalog.gov.ru",
+          "evidence": "official-homepage",
+          "sources": [
+            {
+              "url": "https://www.nalog.gov.ru/rn77/",
+              "checkedAt": "2026-10-08"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "nalog.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-gov-ru",
+              "lines": [
+                33
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [
+        "lkfl2.nalog.ru"
+      ],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "cbr",
+      "name": "Банк России",
+      "aliases": [
+        "цб",
+        "центробанк",
+        "банк россии",
+        "cbr"
+      ],
+      "category": "government",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "cbr.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-gov-ru",
+              "lines": [
+                25
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "mos",
+      "name": "Мос.ру",
+      "aliases": [
+        "москва",
+        "мос ру",
+        "mos.ru"
+      ],
+      "category": "government",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "mos.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-gov-ru",
+              "lines": [
+                53
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "mosreg",
+      "name": "Услуги Московской области",
+      "aliases": [
+        "московская область",
+        "мосрег",
+        "mosreg"
+      ],
+      "category": "government",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "mosreg.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-gov-ru",
+              "lines": [
+                54
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "emias",
+      "name": "ЕМИАС",
+      "aliases": [
+        "емиас",
+        "запись к врачу",
+        "emias"
+      ],
+      "category": "healthcare",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "emias.info",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-gov-ru",
+              "lines": [
+                10
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "goskey",
+      "name": "Госключ",
+      "aliases": [
+        "госключ",
+        "гос ключ",
+        "goskey"
+      ],
+      "category": "government",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "goskey.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-gov-ru",
+              "lines": [
+                28
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "ebs",
+      "name": "Единая биометрическая система",
+      "aliases": [
+        "ебс",
+        "биометрия",
+        "ebs"
+      ],
+      "category": "government",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "ebs.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-gov-ru",
+              "lines": [
+                27
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "sber",
+      "name": "Сбербанк / Сбер ID",
+      "aliases": [
+        "сбер",
+        "сбербанк",
+        "сбер онлайн",
+        "sber",
+        "sberbank"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "id.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/sber",
+              "lines": [
+                23
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "sber.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/sber",
+              "lines": [
+                6
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "sberbank.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/sber",
+              "lines": [
+                7
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "sberbank.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/sber",
+              "lines": [
+                8
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "sbrf.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/sber",
+              "lines": [
+                9
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [
+        "online.sberbank.ru"
+      ],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "tbank",
+      "name": "Т-Банк / Тинькофф",
+      "aliases": [
+        "т банк",
+        "т-банк",
+        "тинькофф",
+        "tbank",
+        "tinkoff"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "cdn-tinkoff.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/tbank-ru",
+              "lines": [
+                17
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "t-static.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/tbank-ru",
+              "lines": [
+                76
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "tbank-online.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/tbank-ru",
+              "lines": [
+                85
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "tbank.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/tbank-ru",
+              "lines": [
+                86
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "tcsbank.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/tbank-ru",
+              "lines": [
+                88
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "tinkoff.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/tbank-ru",
+              "lines": [
+                93
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "alfa",
+      "name": "Альфа-Банк",
+      "aliases": [
+        "альфа",
+        "альфа банк",
+        "альфабанк",
+        "alfa"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "alfa.me",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "alfabank.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "alfabank.st",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                4
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "alfadirect.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                5
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "vtb",
+      "name": "ВТБ",
+      "aliases": [
+        "втб",
+        "vtb"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "vtb-direct.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                80
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vtb.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                82
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "gpb",
+      "name": "Газпромбанк",
+      "aliases": [
+        "газпромбанк",
+        "гпб",
+        "gpb"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "gazprombank.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                26
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "gazprombank.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                28
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "gpb.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                30
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "raiffeisen",
+      "name": "Райффайзенбанк",
+      "aliases": [
+        "райффайзен",
+        "райф",
+        "raiffeisen"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "raiffeisen.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                60
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "sovcombank",
+      "name": "Совкомбанк",
+      "aliases": [
+        "совкомбанк",
+        "халва",
+        "sovcombank"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "hva.im",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                116
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "sovcombank.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                69
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "rshb",
+      "name": "Россельхозбанк",
+      "aliases": [
+        "россельхозбанк",
+        "рсхб",
+        "rshb"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "rshb.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                63
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "mtsbank",
+      "name": "МТС Банк",
+      "aliases": [
+        "мтс банк",
+        "mtsbank"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "dbo-dengi.online",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                40
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "mtsbank.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                41
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "mtsdengi.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                42
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "psb",
+      "name": "ПСБ",
+      "aliases": [
+        "псб",
+        "промсвязьбанк",
+        "psb"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "payment.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                49
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "psb.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                51
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "psbank.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                52
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "tochka",
+      "name": "Банк Точка",
+      "aliases": [
+        "банк точка",
+        "точка",
+        "tochka"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "tochka-tech.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                75
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "tochka.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                76
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "uralsib",
+      "name": "Уралсиб",
+      "aliases": [
+        "уралсиб",
+        "uralsib"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "uralsib.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                146
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "bspb",
+      "name": "Банк Санкт-Петербург",
+      "aliases": [
+        "банк санкт петербург",
+        "бспб",
+        "bspb"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "bspb.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                111
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "mkb",
+      "name": "Московский кредитный банк",
+      "aliases": [
+        "мкб",
+        "московский кредитный банк",
+        "mkb"
+      ],
+      "category": "banking",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "mkb.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                37
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "nspk",
+      "name": "НСПК / СБП / Мир",
+      "aliases": [
+        "нспк",
+        "сбп",
+        "мир",
+        "mir",
+        "nspk"
+      ],
+      "category": "payments",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "mironline.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-ru",
+              "lines": [
+                73
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "mirpayonline.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-ru",
+              "lines": [
+                74
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "nspk.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-bank-ru",
+              "lines": [
+                91
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            },
+            {
+              "path": "sources/upstream/data/category-ru",
+              "lines": [
+                76
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "yandex",
+      "name": "Яндекс: поиск, почта, карты и сервисы",
+      "aliases": [
+        "яндекс",
+        "yandex",
+        "ya",
+        "яндекс карты",
+        "яндекс почта",
+        "яндекс музыка",
+        "яндекс маркет",
+        "яндекс го"
+      ],
+      "category": "ecosystem",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "xn--d1acpjx3f.xn--p1ai",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/yandex",
+              "lines": [
+                7
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "ya.cc",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/yandex",
+              "lines": [
+                31
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "ya.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/yandex",
+              "lines": [
+                32
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "yandex.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/yandex",
+              "lines": [
+                41
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "yandex.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/yandex",
+              "lines": [
+                60
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "yandex.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/yandex",
+              "lines": [
+                63
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "yandexgo.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/yandex",
+              "lines": [
+                74
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "yastat.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/yandex",
+              "lines": [
+                91
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "yastatic.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/yandex",
+              "lines": [
+                93
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "mail",
+      "name": "Почта и Облако Mail",
+      "aliases": [
+        "mail",
+        "mail.ru",
+        "мейл",
+        "маил",
+        "майл",
+        "облако mail"
+      ],
+      "category": "ecosystem",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "appsmail.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mailru-group",
+              "lines": [
+                106
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "attachmail.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mailru-group",
+              "lines": [
+                107
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "bk.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mailru-group",
+              "lines": [
+                125
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "cdnmail.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mailru-group",
+              "lines": [
+                110
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "imgsmail.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mailru-group",
+              "lines": [
+                112
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "inbox.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mailru-group",
+              "lines": [
+                126
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "list.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mailru-group",
+              "lines": [
+                128
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "mail.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mailru-group",
+              "lines": [
+                14
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "smailru.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mailru-group",
+              "lines": [
+                118
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vmailru.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mailru-group",
+              "lines": [
+                120
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "vk",
+      "name": "ВКонтакте / VK",
+      "aliases": [
+        "вк",
+        "вконтакте",
+        "vk",
+        "vkontakte",
+        "vk видео"
+      ],
+      "category": "social",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "cdn-vk.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                29
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "cdn-vk.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                30
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "userapi.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                31
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "userapi.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                32
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vk-cdn.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                34
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vk.cc",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vk.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                4
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vk.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                7
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkontakte.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                8
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkontakte.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                9
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkuser.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                40
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkuseraudio.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                43
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkuseraudio.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                44
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkuseraudio.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                45
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkusercdn.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                41
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkuserphoto.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                42
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkuservideo.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                48
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkuservideo.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                49
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkuservideo.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/vk",
+              "lines": [
+                50
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "vkvideo.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mailru-group",
+              "lines": [
+                35
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "ok",
+      "name": "Одноклассники",
+      "aliases": [
+        "одноклассники",
+        "ok",
+        "ок"
+      ],
+      "category": "social",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "apiok.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ok",
+              "lines": [
+                1
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "odkl.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ok",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "odnoklassniki.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ok",
+              "lines": [
+                11
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "ok.me",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ok",
+              "lines": [
+                13
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "ok.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ok",
+              "lines": [
+                14
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "okcdn.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ok",
+              "lines": [
+                19
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "2gis",
+      "name": "2ГИС",
+      "aliases": [
+        "2гис",
+        "дубль гис",
+        "2gis"
+      ],
+      "category": "maps",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "2gis.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/2gis",
+              "lines": [
+                6
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "2gis.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/2gis",
+              "lines": [
+                12
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "2gis.tech",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/2gis",
+              "lines": [
+                15
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "hh",
+      "name": "HeadHunter",
+      "aliases": [
+        "хедхантер",
+        "хэдхантер",
+        "hh",
+        "работа",
+        "headhunter"
+      ],
+      "category": "employment",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "hh.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/headhunter",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "hhcdn.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/headhunter",
+              "lines": [
+                4
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "ozon",
+      "name": "Ozon",
+      "aliases": [
+        "озон",
+        "ozon"
+      ],
+      "category": "shopping",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "o3.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ozon",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "o3t.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ozon",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "ozon.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ozon",
+              "lines": [
+                12
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "ozon.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ozon",
+              "lines": [
+                21
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "ozon.travel",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ozon",
+              "lines": [
+                24
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "ozoncard.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ozon",
+              "lines": [
+                26
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "ozone.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ozon",
+              "lines": [
+                29
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "ozonusercontent.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/ozon",
+              "lines": [
+                41
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "wb",
+      "name": "Wildberries",
+      "aliases": [
+        "вайлдберриз",
+        "вб",
+        "wb",
+        "wildberries"
+      ],
+      "category": "shopping",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "paywb.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wildberries",
+              "lines": [
+                7
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "paywb.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wildberries",
+              "lines": [
+                8
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "wb-basket.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wildberries",
+              "lines": [
+                18
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "wb.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wildberries",
+              "lines": [
+                24
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "wbbasket.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wildberries",
+              "lines": [
+                27
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "wbcontent.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wildberries",
+              "lines": [
+                28
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "wbpay.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wildberries",
+              "lines": [
+                33
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "wbstatic.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wildberries",
+              "lines": [
+                36
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "wbstatic.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wildberries",
+              "lines": [
+                37
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "wildberries.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wildberries",
+              "lines": [
+                52
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "avito",
+      "name": "Авито",
+      "aliases": [
+        "авито",
+        "avito"
+      ],
+      "category": "shopping",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "avito.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/avito",
+              "lines": [
+                1
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "avito.st",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/avito",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "cian",
+      "name": "Циан",
+      "aliases": [
+        "циан",
+        "cian"
+      ],
+      "category": "shopping",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "cian.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/cian",
+              "lines": [
+                1
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "cian.site",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/cian",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "autoru",
+      "name": "Авто.ру",
+      "aliases": [
+        "авто ру",
+        "auto.ru",
+        "автору"
+      ],
+      "category": "shopping",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "apiauto.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/autoru",
+              "lines": [
+                1
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "auto.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/autoru",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "autoru.me",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/autoru",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "avto.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/autoru",
+              "lines": [
+                4
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "drom",
+      "name": "Дром",
+      "aliases": [
+        "дром",
+        "drom"
+      ],
+      "category": "shopping",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "drom.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-ecommerce-ru",
+              "lines": [
+                10
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "rdrom.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-ecommerce-ru",
+              "lines": [
+                11
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "rt",
+      "name": "Ростелеком",
+      "aliases": [
+        "ростелеком",
+        "рт",
+        "rt",
+        "rostelecom"
+      ],
+      "category": "telecom",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "rostelecom.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/rostelecom",
+              "lines": [
+                4
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "rt.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/rostelecom",
+              "lines": [
+                5
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "mts",
+      "name": "МТС",
+      "aliases": [
+        "мтс",
+        "mts",
+        "мой мтс"
+      ],
+      "category": "telecom",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "mts-ws.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mts-ru",
+              "lines": [
+                1
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "mts.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mts-ru",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "mymts.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/mts-ru",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "megafon",
+      "name": "МегаФон / Yota",
+      "aliases": [
+        "мегафон",
+        "megafon",
+        "йота",
+        "yota"
+      ],
+      "category": "telecom",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "megafon.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/megafon",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "megafon.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/megafon",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "megafonpro.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/megafon",
+              "lines": [
+                4
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "mgfn.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/megafon",
+              "lines": [
+                5
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "scartel.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/megafon",
+              "lines": [
+                7
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "yota.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/megafon",
+              "lines": [
+                8
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "t2",
+      "name": "T2 / Tele2",
+      "aliases": [
+        "т2",
+        "теле2",
+        "t2",
+        "tele2"
+      ],
+      "category": "telecom",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "t2.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/t2-ru",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "tele2.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/t2-ru",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "beeline",
+      "name": "Билайн",
+      "aliases": [
+        "билайн",
+        "beeline"
+      ],
+      "category": "telecom",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "beeline.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-ru",
+              "lines": [
+                87
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "domru",
+      "name": "Дом.ру",
+      "aliases": [
+        "дом ру",
+        "дом.ру",
+        "domru"
+      ],
+      "category": "telecom",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "dom.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-ru",
+              "lines": [
+                88
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "cdek",
+      "name": "СДЭК",
+      "aliases": [
+        "сдэк",
+        "cdek"
+      ],
+      "category": "delivery",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "cdek.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/cdek",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "cdek.shopping",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/cdek",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "pochta",
+      "name": "Почта России",
+      "aliases": [
+        "почта россии",
+        "pochta"
+      ],
+      "category": "delivery",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "pochta.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-ru",
+              "lines": [
+                102
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "rzd",
+      "name": "РЖД",
+      "aliases": [
+        "ржд",
+        "rzd",
+        "железнодорожные билеты"
+      ],
+      "category": "travel",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "rzd-bonus.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-travel-ru",
+              "lines": [
+                32
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "rzd.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-travel-ru",
+              "lines": [
+                33
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "tutu",
+      "name": "Туту",
+      "aliases": [
+        "туту",
+        "tutu"
+      ],
+      "category": "travel",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "tutu.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/category-travel-ru",
+              "lines": [
+                36
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "kinopoisk",
+      "name": "Кинопоиск",
+      "aliases": [
+        "кинопоиск",
+        "kinopoisk"
+      ],
+      "category": "streaming",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "kinopoisk-ru.clstorage.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/kinopoisk",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "kinopoisk.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/kinopoisk",
+              "lines": [
+                1
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "rutube",
+      "name": "RUTUBE",
+      "aliases": [
+        "рутуб",
+        "rutube"
+      ],
+      "category": "streaming",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "rtbcdn.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/rutube",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "rutube.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/rutube",
+              "lines": [
+                1
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "rutube.sport",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/rutube",
+              "lines": [
+                4
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "rutubelist.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/rutube",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "okko",
+      "name": "Okko",
+      "aliases": [
+        "окко",
+        "okko"
+      ],
+      "category": "streaming",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "okko.sport",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/okko",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "okko.tv",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/okko",
+              "lines": [
+                4
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "okkoapi.tv",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/okko",
+              "lines": [
+                1
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "playfamily.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/okko",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "wink",
+      "name": "Wink",
+      "aliases": [
+        "винк",
+        "wink"
+      ],
+      "category": "streaming",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "more.tv",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wink",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "restream-media.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wink",
+              "lines": [
+                1
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "restream.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wink",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "wink.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/wink",
+              "lines": [
+                5
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    },
+    {
+      "id": "gismeteo",
+      "name": "Гисметео",
+      "aliases": [
+        "гисметео",
+        "gismeteo",
+        "погода"
+      ],
+      "category": "weather",
+      "enabledInRuPreset": true,
+      "route": "direct",
+      "rules": [
+        {
+          "match": "domain_suffix",
+          "value": "gismeteo.com",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/gismeteo",
+              "lines": [
+                2
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "gismeteo.net",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/gismeteo",
+              "lines": [
+                3
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "gismeteo.ru",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/gismeteo",
+              "lines": [
+                4
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        },
+        {
+          "match": "domain_suffix",
+          "value": "gismeteo.st",
+          "evidence": "listed-in-pinned-maintainer-data",
+          "sources": [
+            {
+              "path": "sources/upstream/data/gismeteo",
+              "lines": [
+                5
+              ],
+              "commit": "e84921279c9142434b43cb84ec6c17f987e025df"
+            }
+          ]
+        }
+      ],
+      "coveredExamples": [],
+      "coverage": "curated-roots-and-selected-support-domains",
+      "endToEndVerified": false
+    }
+  ]
+}

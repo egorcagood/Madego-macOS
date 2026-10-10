@@ -1,0 +1,27 @@
+{
+  "source": "shared-source/src/EgorVpn/Services/SubscriptionService.cs",
+  "source_sha256": "9974591690a68689bbbccead7497ce3bffd06856f1df2e05b0f71358d65b0d05",
+  "extracted": [
+    "ParseNodes",
+    "TryParseXrayJson",
+    "ParseXrayConfig",
+    "ParseVlessOutbound",
+    "NormalizeTransport",
+    "DecodeMaybeBase64",
+    "GetString",
+    "GetInt",
+    "GetBool",
+    "ReadStringArrayOrString",
+    "GetUnknownObjectProperties"
+  ],
+  "intentional_changes": [
+    "Public parser separate from HTTP/platform",
+    "8MiB input bound",
+    "UUID/port/host checks",
+    "Malformed JSON object guards",
+    "JSON dedup includes all connection fields",
+    "Display names strip controls and cap160UTF16",
+    "Explicitly malformed JSON port rejected instead of fallback443"
+  ],
+  "baseline_modified": false
+}

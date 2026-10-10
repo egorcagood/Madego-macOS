@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFramework>net9.0</TargetFramework><ImplicitUsings>disable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup><ItemGroup><Compile Include="../../shared-source/src/EgorVpn/GlobalUsings.cs" Link="Baseline/GlobalUsings.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Models/*.cs" Link="Baseline/Models/*.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Routing/*.cs" Link="Baseline/Routing/*.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Presentation/NodeOrdering.cs" Link="Baseline/Presentation/NodeOrdering.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Services/VlessUriParser.cs" Link="Baseline/Services/VlessUriParser.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Services/QueryString.cs" Link="Baseline/Services/QueryString.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Services/CountryResolver.cs" Link="Baseline/Services/CountryResolver.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Services/SingleServerShare.cs" Link="Baseline/Services/SingleServerShare.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Services/XrayConfigBuilder.cs" Link="Baseline/Services/XrayConfigBuilder.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Services/AtomicJsonStore.cs" Link="Baseline/Services/AtomicJsonStore.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Services/DisplayFormat.cs" Link="Baseline/Services/DisplayFormat.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Services/NodeLabelFormatter.cs" Link="Baseline/Services/NodeLabelFormatter.cs"/>
+<Compile Include="../../shared-source/src/EgorVpn/Services/RoutingPolicyTransaction.cs" Link="Baseline/Services/RoutingPolicyTransaction.cs"/><EmbeddedResource Include="../../shared-source/src/EgorVpn/Routing/data/*" LogicalName="EgorVpn.Routing.data.%(Filename)%(Extension)"/></ItemGroup></Project>
